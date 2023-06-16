@@ -1,0 +1,207 @@
+:root {
+  --primary: #b6895b;
+  --bg: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  min-height: 3000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #c97725;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+/*Hero Sections*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/bsrremo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #D2B48C;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 1%,
+    rgba(255, 255, 255, 0) 17%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: #000000;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.4;
+  align-items: center;
+}
+
+.hero .content p {
+  font-size: 1.4em;
+  color: #000000;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.5;
+  align-items: center;
+}
+
+.hero .content p span {
+  color: var(--primary);
+}
+
+/* Menu Page */
+.menu {
+  padding: 8rem 7% 1.4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+  position: relative
+}
+
+.menu h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu h2 span {
+  color: var(--primary);
+}
+
+.menu p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.menu .row .menu-card h3 {
+  font-size: 1.5rem;
+}
+
+.menu .row .menu-card img {
+ border-radius: 50%;
+ width: 80%;
+ padding-right: 0.2rem;
+}
+
+.menu .row .menu-card .menu-card-tittle {
+  margin : 1rem auto 0.5rem;
+}
+
+
+/* Chat Page */
+.chat {
+  padding: 8rem 7% 1.4rem;
+}
+
+.chat h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.chat h2 span {
+  color: var(--primary);
+}
+
+.chat .content {
+  display: flex;
+}
+
+.chat iframe {
+  display: flex;
+  background-color: #fff;
+  min-height: 60vh;
+  justify-content: center;
+}
+
+.chat .content .row {
+  display: flex;
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+/*Media Queries*/
+/*Laptop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/*Mobile Phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
